@@ -1,5 +1,31 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="advanced-search-link" remove="true"/>
+
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="text_1">
+                <!--<block class="Magento\Framework\View\Element\Template" name="text_2"-->
+                       <!--template="Oggetto_Text::text2.phtml">-->
+                <!--</block>-->
+
+                <arguments>
+                    <argument name="template" xsi:type="string">Oggetto_Text::text1.phtml</argument>
+                    <argument name="field1" xsi:type="string">field1</argument>
+                    <argument name="field2" xsi:type="string">field2</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <!--<referenceBlock name="text_1">-->
+            <!--<action method="setTemplate">-->
+                <!--<argument name="text_2" xsi:type="string">Oggetto_Text::text2.phtml</argument>-->
+            <!--</action>-->
+        <!--</referenceBlock>-->
+
+        <referenceBlock name="text_1">
+            <arguments>
+                <argument name="template" xsi:type="string">Oggetto_Text::text3.phtml</argument>
+            </arguments>
+        </referenceBlock>
     </body>
 </page>

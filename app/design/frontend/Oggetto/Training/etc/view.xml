@@ -14,4 +14,8 @@
             </image>
         </images>
     </media>
+
+    <vars module="Magento_Catalog">
+        <var name="mini_cart_product_thumbnail">113</var>
+    </vars>
 </view>
